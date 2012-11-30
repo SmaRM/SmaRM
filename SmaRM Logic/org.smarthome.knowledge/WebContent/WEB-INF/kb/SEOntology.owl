@@ -1,0 +1,905 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY ace_lexicon "http://attempto.ifi.uzh.ch/ace_lexicon#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY SimpleSE "http://www.semanticweb.org/ontologies/2012/7/SimpleSE#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2012/7/SimpleSE#"
+     xml:base="http://www.semanticweb.org/ontologies/2012/7/SimpleSE"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:SimpleSE="http://www.semanticweb.org/ontologies/2012/7/SimpleSE#"
+     xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2012/7/SimpleSE"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;TV_pl"/>
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;PN_sg"/>
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;TV_sg"/>
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;CN_sg"/>
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;CN_pl"/>
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;TV_vbg"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#containsDevice -->
+
+    <owl:ObjectProperty rdf:about="&SimpleSE;containsDevice">
+        <ace_lexicon:TV_vbg>containsDeviced</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>containsDevices</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>containsDevice</ace_lexicon:TV_pl>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#hasPreference -->
+
+    <owl:ObjectProperty rdf:about="&SimpleSE;hasPreference">
+        <ace_lexicon:TV_pl>hasPreference</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>hasPreferences</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>hasPreferenced</ace_lexicon:TV_vbg>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#hasProfile -->
+
+    <owl:ObjectProperty rdf:about="&SimpleSE;hasProfile">
+        <ace_lexicon:TV_sg>hasProfiles</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>hasProfile</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>hasProfiled</ace_lexicon:TV_vbg>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#isConnectedToDevice -->
+
+    <owl:ObjectProperty rdf:about="&SimpleSE;isConnectedToDevice">
+        <ace_lexicon:TV_vbg>isConnectedToDeviced</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>isConnectedToDevice</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>isConnectedToDevices</ace_lexicon:TV_sg>
+        <rdfs:subPropertyOf rdf:resource="&SimpleSE;containsDevice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#isControlledByDevice -->
+
+    <owl:ObjectProperty rdf:about="&SimpleSE;isControlledByDevice">
+        <ace_lexicon:TV_vbg>isControlledByDeviced</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>isControlledByDevice</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>isControlledByDevices</ace_lexicon:TV_sg>
+        <rdfs:subPropertyOf rdf:resource="&SimpleSE;isConnectedToDevice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#isControlledByHabitant -->
+
+    <owl:ObjectProperty rdf:about="&SimpleSE;isControlledByHabitant">
+        <ace_lexicon:TV_pl>isControlledByHabitant</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>isControlledByHabitants</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>isControlledByHabitanted</ace_lexicon:TV_vbg>
+        <rdfs:subPropertyOf rdf:resource="&SimpleSE;isConnectedToDevice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#isIdentifiedByID -->
+
+    <owl:ObjectProperty rdf:about="&SimpleSE;isIdentifiedByID">
+        <ace_lexicon:TV_vbg>isIdentifiedByIDed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>isIdentifiedByID</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>isIdentifiedByIDs</ace_lexicon:TV_sg>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#isLocatedAt -->
+
+    <owl:ObjectProperty rdf:about="&SimpleSE;isLocatedAt">
+        <ace_lexicon:TV_sg>isLocatedAts</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>isLocatedAted</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>isLocatedAt</ace_lexicon:TV_pl>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#ownsSmartEnvironment -->
+
+    <owl:ObjectProperty rdf:about="&SimpleSE;ownsSmartEnvironment">
+        <ace_lexicon:TV_pl>ownsSmartEnvironment</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>ownsSmartEnvironmented</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>ownsSmartEnvironments</ace_lexicon:TV_sg>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#BathRoom -->
+
+    <owl:Class rdf:about="&SimpleSE;BathRoom">
+        <rdfs:subClassOf rdf:resource="&SimpleSE;Room"/>
+        <ace_lexicon:CN_pl>BathRooms</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>BathRoom</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#BedRoom -->
+
+    <owl:Class rdf:about="&SimpleSE;BedRoom">
+        <rdfs:subClassOf rdf:resource="&SimpleSE;Room"/>
+        <ace_lexicon:CN_sg>BedRoom</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>BedRooms</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#ControlInterface -->
+
+    <owl:Class rdf:about="&SimpleSE;ControlInterface">
+        <ace_lexicon:CN_pl>ControlInterfaces</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>ControlInterface</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#Device -->
+
+    <owl:Class rdf:about="&SimpleSE;Device">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&SimpleSE;isControlledByHabitant"/>
+                <owl:someValuesFrom rdf:resource="&SimpleSE;Habitant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <ace_lexicon:CN_pl>Devices</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Device</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#DeviceControl -->
+
+    <owl:Class rdf:about="&SimpleSE;DeviceControl">
+        <ace_lexicon:CN_pl>DeviceControls</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>DeviceControl</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#DeviceID -->
+
+    <owl:Class rdf:about="&SimpleSE;DeviceID">
+        <rdfs:subClassOf rdf:resource="&SimpleSE;ID"/>
+        <ace_lexicon:CN_sg>DeviceID</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>DeviceIDs</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#DeviceStateSensor -->
+
+    <owl:Class rdf:about="&SimpleSE;DeviceStateSensor">
+        <rdfs:subClassOf rdf:resource="&SimpleSE;SensorDevice"/>
+        <ace_lexicon:CN_pl>DeviceStateSensors</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>DeviceStateSensor</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#Fact -->
+
+    <owl:Class rdf:about="&SimpleSE;Fact">
+        <rdfs:subClassOf rdf:resource="&SimpleSE;UserPreference"/>
+        <ace_lexicon:CN_sg>Fact</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Facts</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#Habitant -->
+
+    <owl:Class rdf:about="&SimpleSE;Habitant">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&SimpleSE;hasProfile"/>
+                <owl:someValuesFrom rdf:resource="&SimpleSE;UserProfile"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <ace_lexicon:CN_pl>Habitants</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Habitant</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#ID -->
+
+    <owl:Class rdf:about="&SimpleSE;ID">
+        <ace_lexicon:CN_pl>IDs</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>ID</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#Kitchen -->
+
+    <owl:Class rdf:about="&SimpleSE;Kitchen">
+        <rdfs:subClassOf rdf:resource="&SimpleSE;Room"/>
+        <ace_lexicon:CN_pl>Kitchens</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Kitchen</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#LightSensor -->
+
+    <owl:Class rdf:about="&SimpleSE;LightSensor">
+        <rdfs:subClassOf rdf:resource="&SimpleSE;SensorDevice"/>
+        <ace_lexicon:CN_sg>LightSensor</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>LightSensors</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#LivingRoom -->
+
+    <owl:Class rdf:about="&SimpleSE;LivingRoom">
+        <rdfs:subClassOf rdf:resource="&SimpleSE;Room"/>
+        <ace_lexicon:CN_pl>LivingRooms</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>LivingRoom</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#Location -->
+
+    <owl:Class rdf:about="&SimpleSE;Location">
+        <ace_lexicon:CN_pl>Locations</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Location</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#LocationSensor -->
+
+    <owl:Class rdf:about="&SimpleSE;LocationSensor">
+        <owl:equivalentClass rdf:resource="&SimpleSE;OccupancySensor"/>
+        <rdfs:subClassOf rdf:resource="&SimpleSE;SensorDevice"/>
+        <ace_lexicon:CN_sg>LocationSensor</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>LocationSensors</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#MobileDevice -->
+
+    <owl:Class rdf:about="&SimpleSE;MobileDevice">
+        <rdfs:subClassOf rdf:resource="&SimpleSE;Device"/>
+        <ace_lexicon:CN_sg>MobileDevice</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>MobileDevices</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#MotionSensor -->
+
+    <owl:Class rdf:about="&SimpleSE;MotionSensor">
+        <rdfs:subClassOf rdf:resource="&SimpleSE;SensorDevice"/>
+        <ace_lexicon:CN_sg>MotionSensor</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>MotionSensors</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#MultimediaDevice -->
+
+    <owl:Class rdf:about="&SimpleSE;MultimediaDevice">
+        <rdfs:subClassOf rdf:resource="&SimpleSE;Device"/>
+        <ace_lexicon:CN_pl>MultimediaDevices</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>MultimediaDevice</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#OccupancySensor -->
+
+    <owl:Class rdf:about="&SimpleSE;OccupancySensor">
+        <rdfs:subClassOf rdf:resource="&SimpleSE;SensorDevice"/>
+        <ace_lexicon:CN_sg>OccupancySensor</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>OccupancySensors</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#Owner -->
+
+    <owl:Class rdf:about="&SimpleSE;Owner">
+        <rdfs:subClassOf rdf:resource="&SimpleSE;Habitant"/>
+        <ace_lexicon:CN_sg>Owner</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Owners</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#PowerSwitch -->
+
+    <owl:Class rdf:about="&SimpleSE;PowerSwitch">
+        <rdfs:subClassOf rdf:resource="&SimpleSE;DeviceControl"/>
+        <ace_lexicon:CN_sg>PowerSwitch</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>PowerSwitches</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#Preference -->
+
+    <owl:Class rdf:about="&SimpleSE;Preference">
+        <ace_lexicon:CN_sg>Preference</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Preferences</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#Profile -->
+
+    <owl:Class rdf:about="&SimpleSE;Profile">
+        <ace_lexicon:CN_sg>Profile</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Profiles</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#ResourceURI -->
+
+    <owl:Class rdf:about="&SimpleSE;ResourceURI">
+        <rdfs:subClassOf rdf:resource="&SimpleSE;DeviceID"/>
+        <ace_lexicon:CN_pl>ResourceURIs</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>ResourceURI</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#Room -->
+
+    <owl:Class rdf:about="&SimpleSE;Room">
+        <rdfs:subClassOf rdf:resource="&SimpleSE;Location"/>
+        <ace_lexicon:CN_pl>Rooms</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Room</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#Rule -->
+
+    <owl:Class rdf:about="&SimpleSE;Rule">
+        <rdfs:subClassOf rdf:resource="&SimpleSE;UserPreference"/>
+        <ace_lexicon:CN_pl>Rules</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Rule</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#SensorDevice -->
+
+    <owl:Class rdf:about="&SimpleSE;SensorDevice">
+        <rdfs:subClassOf rdf:resource="&SimpleSE;Device"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&SimpleSE;isConnectedToDevice"/>
+                <owl:someValuesFrom rdf:resource="&SimpleSE;SmartHomeController"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <ace_lexicon:CN_pl>SensorDevices</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>SensorDevice</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#SmartEnvironment -->
+
+    <owl:Class rdf:about="&SimpleSE;SmartEnvironment">
+        <ace_lexicon:CN_pl>SmartEnvironments</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>SmartEnvironment</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#SmartHomeController -->
+
+    <owl:Class rdf:about="&SimpleSE;SmartHomeController">
+        <rdfs:subClassOf rdf:resource="&SimpleSE;Device"/>
+        <ace_lexicon:CN_sg>SmartHomeController</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>SmartHomeControllers</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#SmartMeter -->
+
+    <owl:Class rdf:about="&SimpleSE;SmartMeter">
+        <rdfs:subClassOf rdf:resource="&SimpleSE;SensorDevice"/>
+        <ace_lexicon:CN_sg>SmartMeter</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>SmartMeters</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#SmartPhone -->
+
+    <owl:Class rdf:about="&SimpleSE;SmartPhone">
+        <rdfs:subClassOf rdf:resource="&SimpleSE;MobileDevice"/>
+        <ace_lexicon:CN_pl>SmartPhones</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>SmartPhone</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#SmartTV -->
+
+    <owl:Class rdf:about="&SimpleSE;SmartTV">
+        <rdfs:subClassOf rdf:resource="&SimpleSE;MultimediaDevice"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&SimpleSE;isConnectedToDevice"/>
+                <owl:someValuesFrom rdf:resource="&SimpleSE;SmartHomeController"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <ace_lexicon:CN_pl>SmartTVs</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>SmartTV</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#StandbySwitch -->
+
+    <owl:Class rdf:about="&SimpleSE;StandbySwitch">
+        <rdfs:subClassOf rdf:resource="&SimpleSE;DeviceControl"/>
+        <ace_lexicon:CN_pl>StandbySwitches</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>StandbySwitch</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#SystemPreference -->
+
+    <owl:Class rdf:about="&SimpleSE;SystemPreference">
+        <rdfs:subClassOf rdf:resource="&SimpleSE;Preference"/>
+        <ace_lexicon:CN_sg>SystemPreference</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>SystemPreferences</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#TemperatureSensor -->
+
+    <owl:Class rdf:about="&SimpleSE;TemperatureSensor">
+        <rdfs:subClassOf rdf:resource="&SimpleSE;SensorDevice"/>
+        <ace_lexicon:CN_sg>TemperatureSensor</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>TemperatureSensors</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#UserID -->
+
+    <owl:Class rdf:about="&SimpleSE;UserID">
+        <rdfs:subClassOf rdf:resource="&SimpleSE;ID"/>
+        <ace_lexicon:CN_sg>UserID</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>UserIDs</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#UserPreference -->
+
+    <owl:Class rdf:about="&SimpleSE;UserPreference">
+        <rdfs:subClassOf rdf:resource="&SimpleSE;Preference"/>
+        <ace_lexicon:CN_sg>UserPreference</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>UserPreferences</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#UserProfile -->
+
+    <owl:Class rdf:about="&SimpleSE;UserProfile">
+        <rdfs:subClassOf rdf:resource="&SimpleSE;Profile"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&SimpleSE;hasPreference"/>
+                <owl:someValuesFrom rdf:resource="&SimpleSE;UserPreference"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <ace_lexicon:CN_pl>UserProfiles</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>UserProfile</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#WaterSensor -->
+
+    <owl:Class rdf:about="&SimpleSE;WaterSensor">
+        <rdfs:subClassOf rdf:resource="&SimpleSE;SensorDevice"/>
+        <ace_lexicon:CN_sg>WaterSensor</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>WaterSensors</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#WiredControlInterface -->
+
+    <owl:Class rdf:about="&SimpleSE;WiredControlInterface">
+        <rdfs:subClassOf rdf:resource="&SimpleSE;ControlInterface"/>
+        <ace_lexicon:CN_pl>WiredControlInterfaces</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>WiredControlInterface</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#WirelessControlInterface -->
+
+    <owl:Class rdf:about="&SimpleSE;WirelessControlInterface">
+        <rdfs:subClassOf rdf:resource="&SimpleSE;ControlInterface"/>
+        <ace_lexicon:CN_sg>WirelessControlInterface</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>WirelessControlInterfaces</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#bathRoom -->
+
+    <owl:NamedIndividual rdf:about="&SimpleSE;bathRoom">
+        <rdf:type rdf:resource="&SimpleSE;BathRoom"/>
+        <ace_lexicon:PN_sg>bathRoom</ace_lexicon:PN_sg>
+        <containsDevice rdf:resource="&SimpleSE;lightSensorBedRoom"/>
+        <containsDevice rdf:resource="&SimpleSE;locationSensorBedRoom"/>
+        <containsDevice rdf:resource="&SimpleSE;temperatureSensorBathRoom"/>
+        <containsDevice rdf:resource="&SimpleSE;waterSensorShower"/>
+        <containsDevice rdf:resource="&SimpleSE;waterSensorWashingMashine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#bedRoom -->
+
+    <owl:NamedIndividual rdf:about="&SimpleSE;bedRoom">
+        <rdf:type rdf:resource="&SimpleSE;BedRoom"/>
+        <ace_lexicon:PN_sg>bedRoom</ace_lexicon:PN_sg>
+        <containsDevice rdf:resource="&SimpleSE;lightSensorBedRoom"/>
+        <containsDevice rdf:resource="&SimpleSE;locationSensorBedRoom"/>
+        <containsDevice rdf:resource="&SimpleSE;temperatureSensorBedRoom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#kitchen -->
+
+    <owl:NamedIndividual rdf:about="&SimpleSE;kitchen">
+        <rdf:type rdf:resource="&SimpleSE;Kitchen"/>
+        <ace_lexicon:PN_sg>kitchen</ace_lexicon:PN_sg>
+        <containsDevice rdf:resource="&SimpleSE;lightSensorKitchen"/>
+        <containsDevice rdf:resource="&SimpleSE;locationSensorKitchen"/>
+        <containsDevice rdf:resource="&SimpleSE;smartMeterDishWasher"/>
+        <containsDevice rdf:resource="&SimpleSE;temperatureSensorKitchen"/>
+        <containsDevice rdf:resource="&SimpleSE;waterSensorDishWasher"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#lightSensorBathRoom -->
+
+    <owl:NamedIndividual rdf:about="&SimpleSE;lightSensorBathRoom">
+        <rdf:type rdf:resource="&SimpleSE;LightSensor"/>
+        <ace_lexicon:PN_sg>lightSensorBathRoom</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#lightSensorBedRoom -->
+
+    <owl:NamedIndividual rdf:about="&SimpleSE;lightSensorBedRoom">
+        <rdf:type rdf:resource="&SimpleSE;LightSensor"/>
+        <ace_lexicon:PN_sg>lightSensorBedRoom</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#lightSensorKitchen -->
+
+    <owl:NamedIndividual rdf:about="&SimpleSE;lightSensorKitchen">
+        <rdf:type rdf:resource="&SimpleSE;LightSensor"/>
+        <ace_lexicon:PN_sg>lightSensorKitchen</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#lightSensorLivingRoom -->
+
+    <owl:NamedIndividual rdf:about="&SimpleSE;lightSensorLivingRoom">
+        <rdf:type rdf:resource="&SimpleSE;LightSensor"/>
+        <ace_lexicon:PN_sg>lightSensorLivingRoom</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#livingRoom -->
+
+    <owl:NamedIndividual rdf:about="&SimpleSE;livingRoom">
+        <rdf:type rdf:resource="&SimpleSE;LivingRoom"/>
+        <ace_lexicon:PN_sg>livingRoom</ace_lexicon:PN_sg>
+        <containsDevice rdf:resource="&SimpleSE;lightSensorLivingRoom"/>
+        <containsDevice rdf:resource="&SimpleSE;locationSensorLivingRoom"/>
+        <containsDevice rdf:resource="&SimpleSE;smartHomeController"/>
+        <containsDevice rdf:resource="&SimpleSE;temperatureSensorLivingRoom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#locationSensorBath -->
+
+    <owl:NamedIndividual rdf:about="&SimpleSE;locationSensorBath">
+        <rdf:type rdf:resource="&SimpleSE;LocationSensor"/>
+        <ace_lexicon:PN_sg>locationSensorBath</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#locationSensorBedRoom -->
+
+    <owl:NamedIndividual rdf:about="&SimpleSE;locationSensorBedRoom">
+        <rdf:type rdf:resource="&SimpleSE;LocationSensor"/>
+        <ace_lexicon:PN_sg>locationSensorBedRoom</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#locationSensorEntrance -->
+
+    <owl:NamedIndividual rdf:about="&SimpleSE;locationSensorEntrance">
+        <rdf:type rdf:resource="&SimpleSE;LocationSensor"/>
+        <ace_lexicon:PN_sg>locationSensorEntrance</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#locationSensorKitchen -->
+
+    <owl:NamedIndividual rdf:about="&SimpleSE;locationSensorKitchen">
+        <rdf:type rdf:resource="&SimpleSE;LocationSensor"/>
+        <ace_lexicon:PN_sg>locationSensorKitchen</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#locationSensorLivingRoom -->
+
+    <owl:NamedIndividual rdf:about="&SimpleSE;locationSensorLivingRoom">
+        <rdf:type rdf:resource="&SimpleSE;LocationSensor"/>
+        <ace_lexicon:PN_sg>locationSensorLivingRoom</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#motionSensorEntranceDoor -->
+
+    <owl:NamedIndividual rdf:about="&SimpleSE;motionSensorEntranceDoor">
+        <rdf:type rdf:resource="&SimpleSE;MotionSensor"/>
+        <ace_lexicon:PN_sg>motionSensorEntranceDoor</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#owner -->
+
+    <owl:NamedIndividual rdf:about="&SimpleSE;owner">
+        <rdf:type rdf:resource="&SimpleSE;Owner"/>
+        <ace_lexicon:PN_sg>owner</ace_lexicon:PN_sg>
+        <ownsSmartEnvironment rdf:resource="&SimpleSE;smartHome"/>
+        <hasProfile rdf:resource="&SimpleSE;userprofile"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#smartHome -->
+
+    <owl:NamedIndividual rdf:about="&SimpleSE;smartHome">
+        <rdf:type rdf:resource="&SimpleSE;SmartEnvironment"/>
+        <ace_lexicon:PN_sg>smartHome</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#smartHomeController -->
+
+    <owl:NamedIndividual rdf:about="&SimpleSE;smartHomeController">
+        <rdf:type rdf:resource="&SimpleSE;SmartHomeController"/>
+        <ace_lexicon:PN_sg>smartHomeController</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#smartMeterCentralHeating -->
+
+    <owl:NamedIndividual rdf:about="&SimpleSE;smartMeterCentralHeating">
+        <rdf:type rdf:resource="&SimpleSE;SmartMeter"/>
+        <rdf:type rdf:resource="&SimpleSE;TemperatureSensor"/>
+        <ace_lexicon:PN_sg>smartMeterCentralHeating</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#smartMeterDishWasher -->
+
+    <owl:NamedIndividual rdf:about="&SimpleSE;smartMeterDishWasher">
+        <rdf:type rdf:resource="&SimpleSE;SmartMeter"/>
+        <ace_lexicon:PN_sg>smartMeterDishWasher</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#smartMeterSolarPanel -->
+
+    <owl:NamedIndividual rdf:about="&SimpleSE;smartMeterSolarPanel">
+        <rdf:type rdf:resource="&SimpleSE;SmartMeter"/>
+        <ace_lexicon:PN_sg>smartMeterSolarPanel</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#smartMeterWashingMashine -->
+
+    <owl:NamedIndividual rdf:about="&SimpleSE;smartMeterWashingMashine">
+        <rdf:type rdf:resource="&SimpleSE;SmartMeter"/>
+        <ace_lexicon:PN_sg>smartMeterWashingMashine</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#temperatureSensorBathRoom -->
+
+    <owl:NamedIndividual rdf:about="&SimpleSE;temperatureSensorBathRoom">
+        <rdf:type rdf:resource="&SimpleSE;TemperatureSensor"/>
+        <ace_lexicon:PN_sg>temperatureSensorBathRoom</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#temperatureSensorBedRoom -->
+
+    <owl:NamedIndividual rdf:about="&SimpleSE;temperatureSensorBedRoom">
+        <rdf:type rdf:resource="&SimpleSE;TemperatureSensor"/>
+        <ace_lexicon:PN_sg>temperatureSensorBedRoom</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#temperatureSensorKitchen -->
+
+    <owl:NamedIndividual rdf:about="&SimpleSE;temperatureSensorKitchen">
+        <rdf:type rdf:resource="&SimpleSE;TemperatureSensor"/>
+        <ace_lexicon:PN_sg>temperatureSensorKitchen</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#temperatureSensorLivingRoom -->
+
+    <owl:NamedIndividual rdf:about="&SimpleSE;temperatureSensorLivingRoom">
+        <rdf:type rdf:resource="&SimpleSE;TemperatureSensor"/>
+        <ace_lexicon:PN_sg>temperatureSensorLivingRoom</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#user01 -->
+
+    <owl:NamedIndividual rdf:about="&SimpleSE;user01">
+        <rdf:type rdf:resource="&SimpleSE;UserID"/>
+        <ace_lexicon:PN_sg>user01</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#userprofile -->
+
+    <owl:NamedIndividual rdf:about="&SimpleSE;userprofile">
+        <rdf:type rdf:resource="&SimpleSE;UserProfile"/>
+        <ace_lexicon:PN_sg>userprofile</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#waterSensorDishWasher -->
+
+    <owl:NamedIndividual rdf:about="&SimpleSE;waterSensorDishWasher">
+        <rdf:type rdf:resource="&SimpleSE;WaterSensor"/>
+        <ace_lexicon:PN_sg>waterSensorDishWasher</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#waterSensorShower -->
+
+    <owl:NamedIndividual rdf:about="&SimpleSE;waterSensorShower">
+        <rdf:type rdf:resource="&SimpleSE;WaterSensor"/>
+        <ace_lexicon:PN_sg>waterSensorShower</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/7/SimpleSE#waterSensorWashingMashine -->
+
+    <owl:NamedIndividual rdf:about="&SimpleSE;waterSensorWashingMashine">
+        <rdf:type rdf:resource="&SimpleSE;WaterSensor"/>
+        <ace_lexicon:PN_sg>waterSensorWashingMashine</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+

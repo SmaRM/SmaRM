@@ -1,0 +1,24 @@
+An activity allocates a resource. 
+An activity causes an action.
+
+p:phone is an activity. 
+p:bedtoilettransition is an activity. 
+p:enterhome is an activity.
+p:sleep is an activity.
+
+p:smartphone is a resource.
+p:toiletflush is a resource.
+p:toiletlight is a resource.
+p:mobilecharger is a resource.
+
+p:turnoffalarm is an action.
+p:turnonmobilecharger is an action.
+
+p:phone allocates p:smartphone.
+p:bedtoilettransition allocates p:toiletflush.
+p:bedtoilettransition allocates p:toiletlight.
+p:sleep allocates p:mobilecharger.
+
+p:enterhome causes p:turnoffalarm.
+p:sleep causes p:turnonmobilecharger.
+
