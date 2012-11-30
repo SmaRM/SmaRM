@@ -1,0 +1,3 @@
+db.url=dbc:mysql://SERVER:PORT/DATABASE
+db.user=
+db.passwd=
