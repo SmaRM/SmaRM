@@ -1,0 +1,10 @@
+node_cook Cook Cook_Breakfast Cook_Brunch Cook_Lunch Cook_Dinner
+node_eat Eat Eat_Breakfast Eat_Brunch Eat_Lunch Eat_Dinner Snack
+node_clean Housekeeping Laundry Wash_Dishes Wash_Breakfast_Dishes Wash_Lunch_Dishes Wash_Dinner_Dishes
+node_personal_hygiene Bathe Bed_Toilet_Transition Dress Groom Personal_Hygiene Toilet
+node_sleep Sleep Sleep_Out_Of_Bed WakeUp
+node_exercise Exercise Meditate Yoga
+node_take_medicine Evening_Meds Morning_Meds Take_Medicine
+node_work Work Work_On_Computer Work_At_Table
+node_relax Read Relax Watch_TV
+node_all node_cook node_eat node_clean node_personal_hygiene node_sleep node_exercise node_take_medicine node_work node_relax Phone Enter_Home Entertain_Guests Leave_Home Other_Activity
