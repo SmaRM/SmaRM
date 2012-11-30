@@ -1,0 +1,2 @@
+serviceClass: org.smarthome.gwt.coreapp.client.DataService
+path: D14BA61E6EF98F89E031B9E0633C0EE7.gwt.rpc

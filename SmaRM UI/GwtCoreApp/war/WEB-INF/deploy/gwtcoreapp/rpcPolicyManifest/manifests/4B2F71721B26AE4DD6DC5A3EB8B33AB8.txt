@@ -1,0 +1,2 @@
+serviceClass: org.smarthome.gwt.coreapp.client.OntologyService
+path: CCB39C330E203B88CE649521F0053B06.gwt.rpc

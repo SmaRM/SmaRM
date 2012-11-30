@@ -1,0 +1,2 @@
+serviceClass: org.smarthome.gwt.coreapp.client.ConfigurationService
+path: 0322D1D5B0677638ECED61563F18F3D2.gwt.rpc

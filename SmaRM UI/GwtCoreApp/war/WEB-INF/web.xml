@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee                http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+  <!-- Servlets -->
+  <servlet>
+    <servlet-name>dataServlet</servlet-name>
+    <servlet-class>org.smarthome.gwt.coreapp.server.DataServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>dataServlet</servlet-name>
+    <url-pattern>/gwtcoreapp/data</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ontologyServlet</servlet-name>
+    <servlet-class>org.smarthome.gwt.coreapp.server.OntologyServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>ontologyServlet</servlet-name>
+    <url-pattern>/gwtcoreapp/ontology</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>learningServlet</servlet-name>
+    <servlet-class>org.smarthome.gwt.coreapp.server.LearningServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>learningServlet</servlet-name>
+    <url-pattern>/gwtcoreapp/learning</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>configurationServlet</servlet-name>
+    <servlet-class>org.smarthome.gwt.coreapp.server.ConfigurationServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>configurationServlet</servlet-name>
+    <url-pattern>/gwtcoreapp/configuration</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>weatherServlet</servlet-name>
+    <servlet-class>org.smarthome.gwt.coreapp.server.WeatherServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>weatherServlet</servlet-name>
+    <url-pattern>/gwtcoreapp/weather</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>GwtCoreApp.html</welcome-file>
+  </welcome-file-list>
+
+  <servlet>
+    <servlet-name>SystemServiceServlet</servlet-name>
+    <servlet-class>com.google.api.server.spi.SystemServiceServlet</servlet-class>
+    <init-param>
+      <param-name>services</param-name>
+      <param-value/>
+    </init-param>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>SystemServiceServlet</servlet-name>
+    <url-pattern>/_ah/spi/*</url-pattern>
+  </servlet-mapping>
+
+</web-app>

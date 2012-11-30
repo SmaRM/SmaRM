@@ -1,0 +1,2 @@
+serviceClass: org.smarthome.gwt.coreapp.client.LearningService
+path: E04F2025A05BB476A4DF493F283D6133.gwt.rpc
